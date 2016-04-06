@@ -61,10 +61,14 @@ nav > ul
 nav > ul > li 
     display: inline-block
     margin: 0 auto
-    padding: 0
+    padding: 10px
     transition: all .2s ease-in-out
     letter-spacing: 0.05em
     
+nav > ul > li:hover
+    background-color: $lgray
+    .sub-nav
+        display: block
 
 nav > ul > li a 
     text-decoration: none
@@ -84,10 +88,6 @@ nav > ul > li a
     text-align: center
 
 
-nav > ul > li:hover
-    background-color: $lgray
-    .sub-nav
-        display: block
 
 
 .sub-nav ul
@@ -150,18 +150,18 @@ nav > ul > li:hover
         display: block
         flex-direction: column
         flex-wrap: wrap
-        justify-content: space-around
-        align-items: baseline
+        justify-content: center
         width: 100%
+        text-align: center
 
 
     nav > ul > li 
         display: block
         margin: 0 auto
-        padding: 0
+        padding: 0 0 5px 0
         transition: all .2s ease-in-out
         letter-spacing: 0.05em
-        border-bottom: 1px solid $dgray
+        border-bottom: 1px solid $mgray
         background-color: #fff
 
     nav > ul > li:hover
@@ -175,7 +175,7 @@ nav > ul > li:hover
 
     .sub-nav ul
         display: block
-        text-align: left
+        text-align: center
         transition: .6s ease-in
 
 
@@ -185,7 +185,7 @@ nav > ul > li:hover
         letter-spacing: 0
         margin: 0 0 10px
         border-left: none
-        background-color: $lgray
+        background-color: $mgray
 
         &:last-child
             border-right: none
