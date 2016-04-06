@@ -2,7 +2,9 @@
 header 
     background-color: #fff
     width: 100%
-    z-index: 1
+    position: absolute
+    top: 0
+    z-index: 99
 
 
 nav 
@@ -136,7 +138,6 @@ nav > ul > li:hover
     .search
         margin: 0 auto
 
-    
     form
         text-align: center
 
@@ -152,7 +153,6 @@ nav > ul > li:hover
         justify-content: space-around
         align-items: baseline
         width: 100%
-        background-color: #fff
 
 
     nav > ul > li 
@@ -162,13 +162,16 @@ nav > ul > li:hover
         transition: all .2s ease-in-out
         letter-spacing: 0.05em
         border-bottom: 1px solid $dgray
+        background-color: #fff
+
+    nav > ul > li:hover
+        background-color: #fff
 
     hr 
         display: none
 
     .sub-nav
         position: relative
-        background-color: $lgray
 
     .sub-nav ul
         display: block
@@ -177,14 +180,12 @@ nav > ul > li:hover
 
 
     .sub-nav li
-        background-color: $lgray
-        display: block
         padding: 0
-        padding: 0 5px 0 5px
-        font-size: 0.6em
+        padding: 5px
         letter-spacing: 0
         margin: 0 0 10px
         border-left: none
+        background-color: $lgray
 
         &:last-child
             border-right: none
