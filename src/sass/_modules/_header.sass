@@ -5,7 +5,7 @@ header
 
 
 nav 
-    height: 80px
+    height: 50px
     margin: 0
     padding: 20px 0 0 0
 
@@ -15,13 +15,39 @@ header > h1
     text-align: center
 
 form
-    margin: 0 auto
+    padding: 20px 20px 0
     display: block
-    text-align: center
+    max-width: 100%
+    margin: 0 auto
+    text-align: right
     position: relative
 
+input[type="text"]
+    outline: none
+    padding: 8px
+    color: $dgray
+    border: 1px solid $dgray
+
+button
+    margin-left: 10px
+    background-color: #fff
+    color: $dgray
+    border: 1px solid $dgray
+    outline: none
+    letter-spacing: 0.05em
+    cursor: pointer
+    padding: 5px
+
+button:active
+    background-color: $dgray
+    color: #fff
+
+.fa
+    display: inline-block
+    padding: 8px
+
 hr 
-    margin: 30px 0 0 0
+    margin: 0
     color: $dgray
 
 nav > ul 
@@ -96,7 +122,14 @@ nav > ul > li:hover
 
     .search
         margin: 0 auto
+
     
+    form
+        text-align: center
+
+    form input
+        width: 130px
+
     nav > ul 
         margin: 0 auto
         padding: 10px 0 0 0
