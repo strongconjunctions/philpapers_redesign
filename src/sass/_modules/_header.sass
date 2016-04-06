@@ -1,34 +1,13 @@
 /* Header Style */
 header 
     background-color: #fff
+    width: 100%
 
 
 nav 
     height: 130px
     margin: 0
     padding: 20px 0 0 0
-
-
-nav > ul 
-    margin: 0 auto
-    padding: 10px 0 0 0
-    display: flex
-    max-width: 690px
-
-
-nav > ul > li 
-    list-style: none
-    display: inline-block
-    margin: 0 auto
-    padding: 0 0 5px 0
-    letter-spacing: 0.05em
-
-
-
-nav > ul > li a 
-    text-decoration: none
-    color: $dgray
-
 
 nav h1 
     margin: 0 auto
@@ -38,3 +17,67 @@ nav h1
 hr 
     margin: 30px 0 0 0
     color: $dgray
+
+nav > ul 
+    margin: 0 auto
+    padding: 10px 0 0 0
+    display: flex
+    justify-content: space-around
+    max-width: 690px
+
+
+nav > ul > li 
+    display: inline-block
+    margin: 0 auto
+    padding: 0
+    transition: all .2s ease-in-out
+    letter-spacing: 0.05em
+    
+
+nav > ul > li a 
+    text-decoration: none
+    color: $dgray
+
+
+.sub-nav
+    position: absolute
+    background-color: #fff
+    /* background-color: $lgray */
+    /* border: 1px solid $dgray */
+    display: none
+    padding-top: 30px
+    width: 100%
+    margin: 0 auto
+    left: 0
+    text-align: center
+
+
+nav > ul > li:hover
+    background-color: $lgray
+    .sub-nav
+        display: block
+
+
+.sub-nav ul
+    padding: 0
+    display: flex
+    justify-content: center
+    transition: .6s ease-in
+    width: 100%
+
+
+.sub-nav li
+    display: inline-block
+    padding: 0
+    background-color: #fff
+    padding: 0 15px 0 15px
+    font-size: 0.7em
+    letter-spacing: 0
+    margin: 0 0 10px
+    border-left: 1px solid $dgray
+
+    &:last-child
+        border-right: 1px solid $dgray
+        
+.sub-nav li a
+    margin: 0 auto
