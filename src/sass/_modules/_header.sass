@@ -2,6 +2,7 @@
 header 
     background-color: #fff
     width: 100%
+    z-index: 1
 
 
 nav 
@@ -42,9 +43,6 @@ button:active
     background-color: $dgray
     color: #fff
 
-.fa
-    display: inline-block
-    padding: 8px
 
 hr 
     margin: 0
@@ -94,7 +92,8 @@ nav > ul > li:hover
     padding: 0
     display: flex
     justify-content: center
-    transition: .6s ease-in
+    text-align: left
+    flex-wrap: wrap
     width: 100%
 
 
@@ -102,7 +101,7 @@ nav > ul > li:hover
     display: inline-block
     padding: 0
     background-color: #fff
-    padding: 0 15px 0 15px
+    padding: 0 10px 0 10px
     font-size: 0.8em
     letter-spacing: 0
     margin: 0 0 10px
@@ -113,6 +112,20 @@ nav > ul > li:hover
         
 .sub-nav li a
     margin: 0 auto
+
+.fa
+    margin: 0 auto
+
+.fa-search
+    padding: 8px
+
+.fa-caret-down
+    padding-left: 2px
+
+.caret
+    /* align-self: flex-end */
+    vertical-align: baseline
+    text-align: center
 
 
 
@@ -158,21 +171,20 @@ nav > ul > li:hover
         background-color: $lgray
 
     .sub-nav ul
-        display: flex
-        justify-content: center
+        display: block
+        text-align: left
         transition: .6s ease-in
 
 
     .sub-nav li
         background-color: $lgray
-        display: inline-block
+        display: block
         padding: 0
         padding: 0 5px 0 5px
         font-size: 0.6em
         letter-spacing: 0
         margin: 0 0 10px
         border-left: none
-        text-align: left
 
         &:last-child
             border-right: none
