@@ -6,6 +6,21 @@ header
     top: 0
     z-index: 99
 
+ul .meta-nav
+    margin: 0 auto
+    display: flex
+    justify-content: space-around
+    width: 100%
+
+.meta-nav li 
+    display: inline-block
+    padding: 10px
+    margin: 0
+    letter-spacing: 0.05em
+
+.meta-nav li:hover
+    background-color: $lgray
+
 nav 
     height: 70px
     margin: 0
@@ -172,6 +187,20 @@ nav > ul > li a
 /* Media Queries */
 @media (max-width: 560px)
 
+
+    ul .meta-nav
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        width: 100%
+        text-align: center
+
+    .meta-nav li 
+        padding: 10px
+        margin: 0
+        letter-spacing: 0.05em
+
+    
     .search
         margin: 0 auto
 
