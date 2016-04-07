@@ -9,7 +9,7 @@ header
 .meta-nav
     margin: 0 auto
     display: flex
-    justify-content: center
+    justify-content: space-around
     width: 100%
 
 .meta-nav li 
@@ -17,14 +17,24 @@ header
     padding: 10px
     margin: 0
     letter-spacing: 0.05em
+    font-size: 0.8em
 
 .meta-nav li:hover
     background-color: $lgray
+
+
+.label
+    margin: 10px auto
+    display: block
+    padding: 20px 0
+    max-width: 70%
+    text-align: center
 
 nav 
     height: 70px
     margin: 0
     padding: 20px 0 0 0
+
 
 header > h1 
     margin: 0 auto 30px
@@ -53,13 +63,13 @@ input[type="text"]
     outline: none
     padding: 8px
     color: $dgray
-    border: 1px solid $dgray
+    border: 1px solid $mgray
 
 button
     margin-left: 10px
     background-color: #fff
-    color: $dgray
-    border: 1px solid $dgray
+    color: mdgray
+    border: 1px solid $mgray
     outline: none
     letter-spacing: 0.05em
     cursor: pointer
@@ -78,16 +88,18 @@ nav > ul
     margin: 0 auto
     padding: 10px 0 10px 0
     display: flex
-    justify-content: center
+    justify-content: space-around
+    align-content: center
     max-width: 690px
 
 
 nav > ul > li 
     display: inline-block
     padding: 10px
-    margin: 0
+    margin: 10px
     transition: all .2s ease-in-out
     letter-spacing: 0.05em
+    font-size: 0.8em
     
 nav > ul > li:hover
     background-color: $lgray
@@ -189,13 +201,18 @@ nav > ul > li a
 
     .meta-nav
         margin: 0 auto
-        align-content: space-between
+        justify-content: center
 
     .meta-nav li 
-        margin: auto
         letter-spacing: 0.05em
+        font-size: 0.6em
 
-    
+    .label
+        margin: 30px auto
+        border-top: 1px solid $mgray
+        border-bottom: 1px solid $mgray
+        
+
     .search
         margin: 0 auto
 
