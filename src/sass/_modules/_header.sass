@@ -1,4 +1,7 @@
 /* Header Style */
+*    
+    transition: all .15s ease-in-out
+
 header 
     background-color: #fff
     width: 100%
@@ -50,8 +53,9 @@ header > h2
 .entries
     left: 0px
     display: inline-block
-    padding: 8px 20px 0
+    padding: 14px 20px 0
     clear: both
+    font-size: 0.8em
 
 form
     display: inline-block
@@ -86,10 +90,9 @@ hr
 
 nav > ul 
     margin: 0 auto
-    padding: 10px 0 10px 0
+    padding: 0
     display: flex
     justify-content: space-around
-    align-content: center
     max-width: 690px
 
 
@@ -97,7 +100,6 @@ nav > ul > li
     display: inline-block
     padding: 10px
     margin: 10px
-    transition: all .2s ease-in-out
     letter-spacing: 0.05em
     font-size: 0.8em
     
@@ -246,7 +248,6 @@ nav > ul > li a
         display: block
         margin: 0 auto
         padding: 0 0 5px 0
-        transition: all .2s ease-in-out
         letter-spacing: 0.05em
         border-bottom: 1px solid $mgray
         background-color: #fff
