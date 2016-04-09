@@ -50,6 +50,12 @@ header > h2
     text-align: center
     letter-spacing: 0.09em
 
+#upper-nav
+    display: flex
+    margin: center
+    justify-content: space-between
+    width: 100%
+
 .entries
     left: 0px
     display: inline-block
@@ -57,10 +63,23 @@ header > h2
     clear: both
     font-size: 0.8em
 
+.registration
+    display: inline-block
+    width: 100%
+    margin: 0px auto
+    padding: 20px 0
+    text-align: right
+
+    span 
+        margin: 0 20px
+        font-size: 0.8em
+
+        a:hover
+            border-bottom: 1px solid $dgray
+
 form
     display: inline-block
     padding: 24px 20px 0
-    margin: 0 auto
     float: right
 
 input[type="text"]
@@ -118,7 +137,6 @@ nav > ul > li a
     /* background-color: $lgray */
     /* border: 1px solid $dgray */
     display: none
-    padding-top: 10px
     width: 100%
     margin: 10px auto 0
     left: 0
@@ -140,7 +158,7 @@ nav > ul > li a
     margin: 10px
 
 .sub-nav > ul > li
-    margin: 5px
+    margin: 10px
 /*     border: 1px solid $dgray */
 
 .sub-nav li a
@@ -213,6 +231,13 @@ nav > ul > li a
         border-top: 1px solid $mgray
         border-bottom: 1px solid $mgray
         
+    #upper-nav
+        display: block
+
+    .registration
+        margin: 0 auto
+        display: block
+
 
     .search
         margin: 0 auto
