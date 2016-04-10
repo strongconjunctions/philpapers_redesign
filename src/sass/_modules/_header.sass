@@ -9,6 +9,13 @@ header
     top: 0
     z-index: 99
 
+.registration
+    display: inline-block
+    width: 100%
+    margin: 0px auto
+    padding: 20px 0
+    text-align: right
+
 .meta-nav
     margin: 0 auto
     display: flex
@@ -63,12 +70,6 @@ header > h2
     clear: both
     font-size: 0.8em
 
-.registration
-    display: inline-block
-    width: 100%
-    margin: 0px auto
-    padding: 20px 0
-    text-align: right
 
     span 
         margin: 0 20px
@@ -236,7 +237,16 @@ nav > ul > li a
 
     .registration
         margin: 0 auto
-        display: block
+        display: flex
+        justify-content: center
+        text-align: center
+        color: $lblue
+
+        span
+            text-align: center
+            
+            a 
+                color: $lblue
 
 
     .search
