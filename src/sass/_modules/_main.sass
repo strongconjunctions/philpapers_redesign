@@ -15,35 +15,57 @@ body:before
     left: 0
     top: 0
     z-index: -1
-    background-color: rgba($lblue, 0.8)
+    background-color: rgba($lgray, 0.9)
 
 main 
-    max-width: 690px
-    margin: 560px auto 0
-
+    max-width: 100%
 
 main section 
-    border: 1px solid #fff
+    max-width: 690px
+    margin: 560px auto 0
+    border: 1px solid $dgray
     padding: 20px 40px
-
 
 main section h2 
     font-size: 1.8em
     text-align: center
-    color: #fff
+    color: $dgray
     font-weight: 500
-
 
 main section p 
     letter-spacing: 0.05em
-    line-height: 1.8em
-    color: #fff
-    font-weight: 100
+    font-size: 1.1em
+    line-height: 1.5em
 
+main .content 
+    background-color: #fff
+    padding: 20px
+    margin: 120px auto 0
+    text-align: center
 
+main .content h2
+    font-size: 1.5em
+    font-weight: 400
+
+.articles
+    display: flex
+    justify-content: space-between
+    text-align: left
+
+.articles article
+    display: inline-block
+    max-width: 32%
 
 
 @media (max-width: 720px) 
     main section 
         border: none
+
+    .articles
+        display: block
+        text-align: left
+
+    .articles article
+        max-width: 100%
+        padding-bottom: 20px
     
