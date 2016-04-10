@@ -16,6 +16,15 @@ header
     padding: 20px 0
     text-align: right
 
+    span 
+        margin: 0 20px
+        font-size: 0.8em
+
+        a
+            padding: 5px 10px
+            &:hover
+               border-bottom: 1px solid $dgray
+
 .meta-nav
     margin: 0 auto
     display: flex
@@ -71,12 +80,6 @@ header > h2
     font-size: 0.8em
 
 
-    span 
-        margin: 0 20px
-        font-size: 0.8em
-
-        a:hover
-            border-bottom: 1px solid $dgray
 
 form
     display: inline-block
@@ -244,9 +247,14 @@ nav > ul > li a
 
         span
             text-align: center
-            
+
             a 
                 color: $lblue
+                &:hover
+                    background-color: $lblue
+                    color: #fff
+                    border: none
+                    
 
 
     .search
