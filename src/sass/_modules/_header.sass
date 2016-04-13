@@ -53,7 +53,7 @@ header
 #logo
     padding: 10px 0 0
     display: inline-table
-    border-bottom: 5px solid $ldgray
+    /* border-bottom: 5px solid $ldgray */
 
 /* #logo img
     max-width: 280px */
@@ -65,13 +65,14 @@ header
 
 iframe
     border: none !important
-    height: 45px
+    height: 40px
     width: 240px
 
 .label h2
-    margin: 10px auto 0
+    margin: 0 auto 0
     text-align: center
     font-size: 0.8em
+    font-weight: 100
     text-transform: uppercase
     letter-spacing: 0.07em
 
@@ -83,9 +84,8 @@ nav
 
 #upper-nav
     display: flex
-    margin: center
+    margin: 0 auto
     justify-content: space-between
-    max-width: 100%
 
 .entries
     left: 0px
@@ -129,6 +129,7 @@ nav > ul
     padding: 0 40px 0
     display: flex
     justify-content: space-between
+    max-width: 960px
 
 
 nav > ul > li 
@@ -255,7 +256,6 @@ nav > ul > li a
     .registration
         margin: 0 auto
         display: flex
-        max-width: 70%
         justify-content: center
         text-align: center
 
@@ -263,7 +263,6 @@ nav > ul > li a
             text-align: center
 
             a 
-                color: $mgray
                 &:hover
                     background-color: $mgray
                     color: #fff
