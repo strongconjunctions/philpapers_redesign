@@ -18,7 +18,7 @@ header
     text-align: right
 
     span 
-        margin: 0 20px
+        margin: 0 40px
         font-size: 0.8em
 
         a
@@ -30,7 +30,7 @@ header
     margin: 0 auto
     display: flex
     justify-content: space-around
-    width: 100%
+    max-width: 885px
 
 .meta-nav li 
     display: inline-block
@@ -79,27 +79,26 @@ nav
     height: 50px
     margin: 0
     padding: 20px 0 0 0
-
+    letter-spacing: 0.04em
 
 
 #upper-nav
     display: flex
     margin: center
     justify-content: space-between
-    width: 100%
+    max-width: 100%
 
 .entries
     left: 0px
     display: inline-block
-    padding: 14px 20px 0
+    padding: 14px 0 0 40px
     clear: both
     font-size: 0.8em
 
 
-
 form
     display: inline-block
-    padding: 24px 20px 0
+    padding: 24px 40px 0 0
     float: right
 
 input[type="text"]
@@ -122,17 +121,15 @@ button:active
     background-color: $dgray
     color: #fff
 
-
 hr 
     margin: 0
     color: $dgray
 
 nav > ul 
     margin: 0 auto
-    padding: 0
+    padding: 0 40px 0
     display: flex
-    justify-content: space-around
-    max-width: 690px
+    justify-content: space-between
 
 
 nav > ul > li 
@@ -140,9 +137,11 @@ nav > ul > li
     padding: 10px
     letter-spacing: 0.05em
     font-size: 0.9em
+    text-transform: uppercase
     
 nav > ul > li:hover
-    background-color: $lgray
+    background-color: $ldgray
+    color: #fff
     .sub-nav
         display: block
 
@@ -154,6 +153,7 @@ nav > ul > li a
 .sub-nav
     position: absolute
     background-color: #fff
+    color: $dgray
     /* background-color: $lgray */
     /* border: 1px solid $dgray */
     display: none
@@ -161,7 +161,9 @@ nav > ul > li a
     margin: 10px auto 0
     left: 0
     text-align: center
-
+    
+    .sub-nav:hover
+        color: $dgray
 
 .sub-nav > ul
     padding: 0
