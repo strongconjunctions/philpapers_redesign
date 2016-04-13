@@ -29,8 +29,8 @@ header
 .meta-nav
     margin: 0 auto
     display: flex
-    justify-content: space-around
-    max-width: 885px
+    justify-content: space-between
+    max-width: 960px
 
 .meta-nav li 
     display: inline-block
@@ -41,7 +41,7 @@ header
     a
         padding: 10px
         &:hover
-            background-color: $lgray
+            background-color: $cyan
 
 
 .label
@@ -69,7 +69,7 @@ iframe
     width: 260px
 
 .label h2
-    margin: 0 auto 0
+    margin: 0 auto 10px
     text-align: center
     font-size: 0.9em
     font-weight: 100
@@ -138,15 +138,16 @@ nav > ul > li
     letter-spacing: 0.05em
     font-size: 0.9em
     
-nav > ul > li:hover
-    background-color: $lgray
-    color: #fff
-    .sub-nav
-        display: block
+    &:hover
+        background-color: $cyan
+        color: #fff
+        .sub-nav
+            display: block
 
-nav > ul > li a 
+nav > ul > li > a 
     text-decoration: none
-    color: $dgray
+    &:hover
+        color: #fff
 
 
 .sub-nav
