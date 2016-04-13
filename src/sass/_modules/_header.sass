@@ -24,8 +24,8 @@ header
         a
             padding: 5px 10px
             &:hover
-               border-bottom: 1px solid $dgray
-
+               border-bottom: 5px solid $ldgray
+    
 .meta-nav
     margin: 0 auto
     display: flex
@@ -76,9 +76,8 @@ iframe
     letter-spacing: 0.07em
 
 nav 
-    height: 50px
     margin: 0
-    padding: 20px 0 0 0
+    padding: 10px 0 0 0
     letter-spacing: 0.04em
 
 
@@ -137,10 +136,9 @@ nav > ul > li
     padding: 10px
     letter-spacing: 0.05em
     font-size: 0.9em
-    text-transform: uppercase
     
 nav > ul > li:hover
-    background-color: $ldgray
+    background-color: $lgray
     color: #fff
     .sub-nav
         display: block
@@ -161,9 +159,6 @@ nav > ul > li a
     margin: 10px auto 0
     left: 0
     text-align: center
-    
-    .sub-nav:hover
-        color: $dgray
 
 .sub-nav > ul
     padding: 0
@@ -177,11 +172,10 @@ nav > ul > li a
     background-color: #fff
     padding: 8px 10px 8px 10px
     letter-spacing: 0
-    margin: 10px
+    margin: 10px 10px 0 10px
 
-.sub-nav > ul > li
-    margin: 10px
-/*     border: 1px solid $dgray */
+    &:hover
+        background-color: $dgray
 
 .sub-nav li a
     margin: 0 auto
@@ -212,7 +206,7 @@ nav > ul > li a
 
 .sub-sub-nav li
     background-color: #fff
-    margin: 10px 10px
+    margin: 10px 10px 0 10px
     padding: 0
 /*     border-left: 1px solid $dgray
     border-right: 1px solid $dgray */
@@ -241,8 +235,8 @@ nav > ul > li a
 @media (max-width: 560px)
 
     .meta-nav
-        margin: 0 auto
-        justify-content: center
+        margin: 20px auto
+        justify-content: space-around
 
     .meta-nav li 
         letter-spacing: 0.05em
@@ -254,6 +248,9 @@ nav > ul > li a
 
     #upper-nav
         display: block
+        margin: 0 auto
+        max-width: 240px
+
 
     .registration
         margin: 0 auto
@@ -273,21 +270,24 @@ nav > ul > li a
                     border: none
                     
 
-
     .search
         margin: 0 auto
+
+        .input-field
+            width: 185px
 
 
     .entries
         display: block
-        text-align: center
+        text-align: left
         clear: both
-
+        padding: 20px 0 0 0
 
     form
         float: none
         display: block
-        text-align: center
+        text-align: left
+        padding: 10px 0 0 0
 
     form input
         width: 130px
