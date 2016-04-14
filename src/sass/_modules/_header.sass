@@ -79,7 +79,7 @@ iframe
 
 nav 
     margin: 0
-    padding: 10px 0 0 0
+    padding: 0
     letter-spacing: 0.04em
 
 
@@ -91,15 +91,16 @@ nav
 .entries
     left: 0px
     display: inline-block
-    padding: 14px 0 0 40px
+    padding: 0 0 0 40px
     clear: both
     font-size: 0.8em
 
 
 form
     display: inline-block
-    padding: 24px 40px 0 0
+    padding: 10px 40px 0 0
     float: right
+
 
 input[type="text"]
     outline: none
@@ -140,17 +141,17 @@ nav > ul > li
     font-size: 0.9em
     
     &:hover
-        background-color: $cyan
-        color: #fff
+        background-color: $ldgray
         .sub-nav
             display: block
 
 nav > ul > li > a 
     text-decoration: none
     padding: 10px
-    &:hover
-        color: #fff
+    color: $ldgray
 
+nav > ul > li:hover > a
+    color: #fff
 
 .sub-nav
     position: absolute
@@ -166,22 +167,20 @@ nav > ul > li > a
 
 .sub-nav > ul
     padding: 0
+    margin: 0 0 -5px 0
     display: flex
     justify-content: center
     flex-wrap: wrap
     width: 100%
 
-.sub-nav  li
+.sub-nav li
     display: inline-block
     background-color: #fff
-    padding: 8px 10px 8px 10px
+    padding: 10px
     letter-spacing: 0
-    margin: 10px 10px 0 10px
+    margin: 5px 10px
 
-    &:hover
-        background-color: $dgray
-
-.sub-nav li a
+.sub-nav > li > a
     margin: 0 auto
 
 .fa
@@ -206,17 +205,15 @@ nav > ul > li > a
     width: 100%
     left: 0
     text-align: center
-    margin: 0 auto
 
 .sub-sub-nav li
     background-color: #fff
-    margin: 10px 10px 0 10px
     padding: 0
 /*     border-left: 1px solid $dgray
     border-right: 1px solid $dgray */
 
 .sub-nav li:hover
-    background-color: $lgray
+    background-color: $mgray
 
     .sub-sub-nav
         display: block
@@ -306,11 +303,15 @@ nav > ul > li > a
     nav > ul > li 
         display: block
         margin: 0 auto
-        padding: 0 0 5px 0
+        padding: 10px 0 10px 0
         letter-spacing: 0.05em
+        border-bottom: 1px solid $mgray
             
         &:hover
-            background-color: #fff
+            background-color: $cyan
+        &:last-child
+            border-bottom: none
+
     hr 
         display: none
 
@@ -320,14 +321,14 @@ nav > ul > li > a
     .sub-nav > ul
         display: block
         text-align: center
-        transition: .6s ease-in
+        margin-bottom: -10px
 
 
     .sub-nav li
         padding: 0
         padding: 5px
         letter-spacing: 0.04em
-        margin: 10px 0
+        margin: 10px
         border-left: none
         background-color: #FFF
 
