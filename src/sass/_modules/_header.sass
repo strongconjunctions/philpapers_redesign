@@ -1,6 +1,4 @@
 /* Header Style */
-*    
-    transition: all .15s ease-in-out
 
 header 
     background-color: #fff
@@ -10,51 +8,80 @@ header
     z-index: 99
 
 
+/* SIGN IN | SIGN UP AREA */
 .registration
     display: inline-block
     width: 100%
     margin: 0px auto
     padding: 20px 0
     text-align: right
+    letter-spacing: 0.08rem
+    font-size: 0.7rem
+    text-transform: uppercase
 
     span 
         margin: 0 40px
         font-size: 0.8em
 
         a
-            padding: 5px 10px
+            padding: 10px
             &:hover
-               border-bottom: 5px solid $ldgray
-    
+               background-color: $lgray
+        b 
+            font-size: 1.2em
+            color: $dgray
+            font-weight: 100
+
+
+/* PhilPapers, PhilEvents, PhilJobs Area */
 .meta-nav
     margin: 0 auto
-    display: flex
-    justify-content: space-between
-    max-width: 960px
-    padding: 0 40px
+    padding: 0
+    max-width: 100%
+    border-top: 1px solid $border
+    border-bottom: 1px solid $border
 
-.meta-nav li 
-    display: inline-block
-    margin: 9px 0
-    letter-spacing: 0.05em
-    font-size: 0.8em
+    ul
+        margin: 0 auto
+        display: flex
+        padding: 0 40px
+        justify-content: space-between
+        max-width: 960px
+        border: none
 
-    a
-        padding: 10px
-        &:hover
-            background-color: $cyan
+        li 
+            display: inline-block
+            margin: 0
+            letter-spacing: 0.05em
+            font-size: 0.8em
+            &:hover
+                background-color: #fff
 
 
+            a
+                padding: 10px
+                &:hover
+                    background-color: $cyan
+                    color: #fff
+
+
+
+/* Website Logo and Sub-Header */
 .label
-    margin: 0 auto
+    margin: 30px auto
     display: block
     padding: 20px 0
     text-align: center
 
 #logo
-    padding: 10px 0 0
+    padding: 0
     display: inline-table
-    /* border-bottom: 5px solid $ldgray */
+
+
+iframe
+    border: none !important
+    height: 50px
+    width: 260px
  
 /* #logo img
     max-width: 280px */
@@ -64,11 +91,6 @@ header
     padding-top: 30px
     text-align: center */
 
-iframe
-    border: none !important
-    height: 60px
-    width: 260px
-
 .label h2
     margin: 0 auto 10px
     text-align: center
@@ -77,54 +99,62 @@ iframe
     text-transform: uppercase
     letter-spacing: 0.05em
 
-nav 
-    margin: 0
-    padding: 0
-    letter-spacing: 0.04em
 
 
-#upper-nav
+/* Entries, Visitors, Search Area */
+.upper-nav
     display: flex
     margin: 0 auto
     justify-content: space-between
-
-.entries
-    left: 0px
-    display: inline-block
-    padding: 0 0 0 40px
-    clear: both
-    font-size: 0.8em
+    border-top: 1px solid $border
+    border-bottom: 1px solid $border
 
 
-form
-    display: inline-block
-    padding: 10px 40px 0 0
-    float: right
+    .entries
+        left: 0px
+        display: inline-block
+        padding: 0 0 0 40px
+        clear: both
+        font-size: 0.8em
 
+    form
+        display: inline-block
+        padding: 10px 40px 0 0
+        float: right
 
-input[type="text"]
+        .search
+            width: 100%
+
+.input-field
     outline: none
     padding: 8px
+    margin: 0 6px 0 0
     color: $dgray
-    border: 1px solid $mgray
+    border: 1px solid $border
 
 button
     margin-left: 10px
     background-color: #fff
-    color: mdgray
-    border: 1px solid $mgray
+    color: $ldgray
+    border: 1px solid $border
     outline: none
     letter-spacing: 0.05em
     cursor: pointer
     padding: 5px
 
 button:active
-    background-color: $dgray
+    background-color: $mgray
     color: #fff
 
-hr 
+
+
+
+/* Content Navigation Area */
+.nav-2
     margin: 0
-    color: $dgray
+    padding: 0
+    letter-spacing: 0.04em
+
 
 nav > ul 
     margin: 0 auto
@@ -133,12 +163,11 @@ nav > ul
     justify-content: space-between
     max-width: 960px
 
-
 nav > ul > li 
     display: inline-block
     padding: 10px 0
-    letter-spacing: 0.05em
-    font-size: 0.9em
+    letter-spacing: 0.06em
+    font-size: 0.9rem
     
     &:hover
         background-color: $ldgray
@@ -177,8 +206,10 @@ nav > ul > li:hover > a
     display: inline-block
     background-color: #fff
     padding: 10px
-    letter-spacing: 0
     margin: 5px 10px
+
+.sub-nav > ul > li
+    font-size: 0.8rem
 
 .sub-nav > li > a
     margin: 0 auto
@@ -209,12 +240,11 @@ nav > ul > li:hover > a
 .sub-sub-nav li
     background-color: #fff
     padding: 0
-/*     border-left: 1px solid $dgray
-    border-right: 1px solid $dgray */
 
-.sub-nav li:hover
+
+.sub-nav > ul > li:hover
     background-color: $mgray
-
+    
     .sub-sub-nav
         display: block
 
@@ -223,70 +253,91 @@ nav > ul > li:hover > a
     display: inline-block
     background-color: #fff
     padding: 10px
-    letter-spacing: 0
-
+    font-size: 0.7rem
 
 .sub-sub-nav li a:hover
     background-color: $lgray
-
-
 
 
 /* Media Queries */
 @media (max-width: 560px)
 
     .meta-nav
-        margin: 20px auto
-        justify-content: space-around
+        margin: 0 auto
+        display: block
+        padding: 0
+        max-width: 100%
+        border: none
 
-    .meta-nav li 
-        letter-spacing: 0.05em
-        font-size: 0.7em
+        ul
+            margin: 20px auto
+            display: block
+            padding: 0
+            max-width: 100%
+            border: none
+
+            li 
+                border: none
+                margin: 0 8px
+
 
     .label
-        margin: 20px auto 20px
+        margin: 40px auto
+
+    #logo
+        padding: 0 0 0
+        display: inline-table
+
+    iframe
+        border: none !important
+        width: 260px
+     
+
+    .label h2
+        text-align: center
+        font-weight: 100
+        text-transform: uppercase
+        letter-spacing: 0.05em
 
 
-    #upper-nav
+    .upper-nav
         display: block
-        margin: 0 auto
+        margin: 0 auto 50px
         max-width: 260px
-
+        border-bottom: none
+        border-top: none
 
     .registration
         margin: 0 auto
-        display: flex
-        justify-content: center
+        display: block
         text-align: center
 
         span
             text-align: center
-
-            a 
-                &:hover
-                    background-color: $mgray
-                    color: #fff
-                    border: none
                     
-
-    form
+    .upper-nav form
         float: none
         display: block
         text-align: left
-        padding: 10px 0 10px 0
+        padding: 20px 0 0 0
 
     .search
         margin: 0 auto
+        width: 100%
 
-        .input-field
-            width: 205px
+    .input-field
+        width: 76%
+        margin: 0
+
+    .fa-search
+        float: right
 
 
     .entries
         display: block
         text-align: left
         clear: both
-        padding: 20px 0 0 0
+        padding: 0 !important
 
 
     nav > ul 
@@ -305,7 +356,7 @@ nav > ul > li:hover > a
         margin: 0 auto
         padding: 10px 0 10px 0
         letter-spacing: 0.05em
-        border-bottom: 1px solid $mgray
+        border-bottom: 1px solid $border
             
         &:hover
             background-color: $cyan
@@ -338,7 +389,7 @@ nav > ul > li:hover > a
             margin: 0
 
         .sub-sub-nav li
-            padding: 0
             letter-spacing: 0.04em
             flex-wrap: wrap
+
 
