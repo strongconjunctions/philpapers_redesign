@@ -25,7 +25,7 @@ main
 
 main .greeting 
     max-width: 690px
-    margin: 520px auto 0
+    margin: 480px auto 0
     /* border: 5px solid #fff */
     padding: 20px 40px
 
@@ -34,12 +34,14 @@ main .greeting h2
     text-align: center
     color: #fff
     font-weight: 900
-    line-height: 1.7em
+    line-height: 1.6em
     text-transform: uppercase
-    letter-spacing: 0.1em
+    letter-spacing: 0.09em
 
 .upper-border
     border-top: 8px solid #fff
+    margin: 0
+    padding: 0
 
 main .greeting p 
     letter-spacing: 0.08em
@@ -82,7 +84,7 @@ main .content
 
 main .content h2
     font-size: 2.2em
-    letter-spacing: 0.02em
+    letter-spacing: -0.06em
     word-spacing: 0.1em
     display: inline-table
     font-weight: 900
@@ -93,34 +95,46 @@ main .content h2
     color: $ldgray
     font-family: 'Lora', Georgia
     display: flex
-    padding: 0 40px
+    padding: 0 20px
     font-weight: 100
     font-size: 1.2em
     letter-spacing: -0.01em
     word-spacing: 0.02em
     justify-content: space-between
     text-align: left
-    max-width: 720px
+    max-width: 690px
     margin: 0 auto
-    line-height: 1.6em
+    line-height: 1.5em
 
 
 .articles article
     display: inline-block
 
+.left-quote
+    text-transform: uppercase
+    float: left
+    color: $turq
+    max-width: 280px
+    font-weight: 400
+    font-size: 1.25rem
+    line-height: 1.7em
+    letter-spacing: 0.02em
+    font-style: italic
+    padding: 20px 20px 20px 0
 
 
 
+/* MEDIA QUERIES */
 @media (max-width: 760px) 
     .articles
         display: block
         margin: 0 auto
         text-align: left
         max-width: 92%
+        padding-bottom: 20px
 
     .articles article
         max-width: 100%
-        padding-bottom: 20px
 
 
 @media (max-width: 640px) 
@@ -151,10 +165,14 @@ main .content h2
 
     .articles
         max-width: 98%
-        font-size: 1.2em
+        font-size: 1.1rem
         line-height: 1.5em
         letter-spacing: -0.01em
 
+    .left-quote
+        font-size: 1.2rem
+        max-width: 100%
+        padding: 30px 0
 
 @media (max-width: 400px) 
 
@@ -179,3 +197,8 @@ main .content h2
 
     main .content p
         font-size: 1rem
+
+   .left-quote
+        font-size: 1rem
+        max-width: 100%
+        padding: 20px 0
