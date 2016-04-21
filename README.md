@@ -1,1 +1,0 @@
-### PhilPapers Website Header Redesign
